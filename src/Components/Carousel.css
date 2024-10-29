@@ -1,0 +1,52 @@
+.carousel-container {
+    width: 80%;
+    margin: 40px auto; /* Adds spacing from the top */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    padding: 20px; /* Adds padding inside the box */
+    border-radius: 15px; /* Rounds the corners a bit more */
+    background-color: #fbefe0; /* Adds a background color */
+    overflow: hidden; /* Hides overflow */
+  }
+  
+  .carousel-content {
+    text-align: center; /* Centers the text */
+    margin-top: 15px; /* Adds space above the text */
+    font-size: 1.2em; /* Increases font size */
+    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Darker text color for better contrast */
+  }
+  
+  /* New styles for centering images */
+  .slick-slide {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .slick-slide img {
+    width: 800px; /* Ensure the image scales properly */
+    height: 400px; /* Maintain aspect ratio */
+    display: block; /* Ensures images are treated as block elements */
+    margin: 0 auto; /* Center image in the slide */
+    border-radius: 10px; /* Rounded corners for images */
+    transition: transform 0.3s; /* Smooth transition for scaling */
+  }
+  
+  /* Hover effect for images */
+  .slick-slide img:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+  }
+  
+  /* Style for the dots */
+  .slick-dots {
+    bottom: 16px; /* Positioning of dots */
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px; /* Size of the dots */
+    color: #aaa; /* Default dot color */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #333; /* Active dot color */
+  }
+  

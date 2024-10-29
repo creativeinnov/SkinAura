@@ -1,0 +1,127 @@
+/* Navbar.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fff7eb ;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+  padding: 10px 40px;
+  background-color: #fef1ea; /* Dark background color */
+  color: white; 
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+}
+
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 80px; /* Logo height */
+  margin-right: 10px; /* Space between logo and site name */
+  font-size: 2rem;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 50px; /* Space between links */
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+/* .navbar-links a {
+  color: brown;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: rgb(58, 2, 2); 
+}
+
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; 
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+} */
+
+.navbar-links a {
+  position: relative;
+  color: brown;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: rgb(58, 2, 2); /* Lighter shade on hover */
+}
+
+/* Add sliding underline effect */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust position slightly below the text */
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: rgb(58, 2, 2); /* Color of the underline */
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%; /* Expands the underline fully on hover */
+}
+
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: black; /* Color of the hamburger icon */
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.active {
+  display: block; /* Show links when active */
+  max-height: 200px; /* Adjust to fit your navbar */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide links on small screens */
+  }
+
+  .navbar {
+    justify-content: center; /* Center align logo on small screens */
+  }
+}

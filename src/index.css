@@ -1,0 +1,29 @@
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+    background-color: #fdf4e6; /* User's preferred background color */
+  }
+  
+  .get-started-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #d8ae69; /* Change to desired color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started-button:hover {
+    background-color: #c15d00;
+  }
+  
+  .get-started-button a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
